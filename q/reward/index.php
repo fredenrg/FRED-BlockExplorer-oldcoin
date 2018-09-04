@@ -1,6 +1,6 @@
 <?php 
 $data_string = '{"jsonrpc":"2.0","id":"test","method":"getlastblockheader","params":" "}';
-$ch = curl_init('http://165.227.37.180:31807/json_rpc');
+$ch = curl_init('http://127.0.0.1:31807/json_rpc');
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
 curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
